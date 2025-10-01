@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Art</title>
+   <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	 <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+	 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+      <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+	  
+     <script type="text/javascript"  src="js/jquery-2.1.1.min.js"></script>
+     <script  type="text/javascript" src="js/bootstrap.min.js"></script>
+	  
+	<script src="js/ekko-lightbox.js"></script>
+	
+    
+ 
+</head>
+<body>
+<section id="top" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="top clearfix">
+    <div class="col-sm-4 top_left clearfix">
+	 <div class="top_left_inner clearfix">
+	  <p><a href="index.html"><i class="fa fa-pencil"></i>New <span class="new_right">Art</span></a></p>
+	 </div>
+	</div> 
+	<div class="col-sm-4 top_left clearfix">
+	 <div class="top_new clearfix">
+      <div class="input-group">
+			<input type="text" class="form-control" placeholder="Search">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="button">
+					Go!</button>
+			</span>
+      </div>
+	 </div>
+	</div>
+	<div class="col-sm-4 top_right clearfix">
+	 <div class="top_right_inner clearfix">
+	  <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a href="#" class="top_tab dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gear"></i></a>
+                    <ul class="dropdown-menu drop_top">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="top_tab dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                    <ul class="dropdown-menu" style="min-width: 300px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form class="navbar-form navbar-left" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button">
+                                                Go!</button>
+                                        </span>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+				<li class="dropdown">
+						<a class="top_tab dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-plus-square-o"></i></a>
+						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+							<form method="post" action="http://bootsnipp-env.elasticbeanstalk.com/iframe/login" accept-charset="UTF-8">
+								<input style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
+								<input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
+								<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+								<label class="string optional" for="user_remember_me"> Remember me</label>
+								<input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">
+								<label style="text-align:center;margin-top:5px">or</label>
+                                <input class="btn btn-danger btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+								<input class="btn btn-success btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
+							</form>
+						</div>
+					</li>
+            </ul>
+	 </div>
+	</div>   	
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="header" class="cd-secondary-nav clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="header clearfix">
+    <nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><i class="fa fa-pencil"></i>New <span class="new_right">Art</span></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a class="header_tab" href="index.html">Home</a></li>
+					<li class="active"><a class="header_tab" href="about.html">About</a></li>
+					<li class="dropdown">
+						<a href="#" class="header_tab dropdown-toggle" data-toggle="dropdown">Product <b class="caret"></b></a>
+						<ul class="dropdown-menu drop_1">
+							<li><a href="photography.html">Product</a></li>
+							<li><a href="details.html">Product Detail</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="header_tab dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+						<ul class="dropdown-menu drop_1">
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="blog_detail.html">Blog Detail</a></li>
+						</ul>
+					</li>
+	
+					<li><a class="header_tab" href="contact.html">Contact</a></li>
+					<li class="dropdown">
+						<a href="#" class="header_tab dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+						<ul class="dropdown-menu drop_1">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="header_tab header_tab_cart dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i>  </a>
+						<ul class="dropdown-menu drop_cart" role="menu">
+						<li>
+						 <div class="drop_1i clearfix">
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1il clearfix"><h4 class="mgt">2 ITEMS</h4></div>
+						  </div>
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1il text-right clearfix"><h4 class="mgt"><a href="cart.html">VIEW CART</a></h4></div>
+						  </div>
+						 </div>
+						 <div class="drop_1i1 clearfix">
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1i1l clearfix"><h5 class="mgt bold"><a href="#">Nulla Quis</a> <br> <span class="normal col_black mt_top">1x - $89.00</span></h5></div>
+						  </div>
+						  <div class="col-sm-4 col-xs-4">
+						   <div class="drop_1i1r clearfix"><a href="#"><img src="img/4.jpg" class="iw" alt="abc"></a></div>
+						  </div>
+						  <div class="col-sm-2 col-xs-2">
+						   <div class="drop_1i1l text-right clearfix"><h6 class="mgt bold"> <span><i class="fa fa-trash"></i></span></h6></div>
+						  </div>
+						 </div>
+						 <div class="drop_1i1 clearfix">
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1i1l clearfix"><h5 class="mgt bold"><a href="#">Eget Nulla</a> <br> <span class="normal col_black mt_top">1x - $49.00</span></h5></div>
+						  </div>
+						  <div class="col-sm-4 col-xs-4">
+						   <div class="drop_1i1r clearfix"><a href="#"><img src="img/5.jpg" class="iw" alt="abc"></a></div>
+						  </div>
+						  <div class="col-sm-2 col-xs-2">
+						   <div class="drop_1i1l text-right clearfix"><h6 class="mgt bold"> <span><i class="fa fa-trash"></i></span></h6></div>
+						  </div>
+						 </div>
+						 <div class="drop_1i2 clearfix">
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1il clearfix"><h4 class="mgt col_black">TOTAL</h4></div>
+						  </div>
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1il text-right clearfix"><h4 class="mgt col_black">$147.00</h4></div>
+						  </div>
+						 </div>
+						 <div class="drop_1i3 text-center clearfix">
+						  <div class="col-sm-12 col-xs-12">
+						   <h4><a class="button_link d_block" href="checkout.html">CHECKOUT</a></h4>
+						  </div>
+						 </div>
+						</li>
+					  </ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="photograph" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="photograph clearfix">
+    <p><a href="#">Home</a> > <span class="photo_tab">About Us</span></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="proj_h">
+<div class="container">
+<div class="row">
+<div class="proj_h1 clearfix">
+<div class="col-sm-3">
+<div class="proj_h1i text-center clearfix">
+ <span><i class="fa fa-users"></i></span>
+ <h4 class="mt_15 col_black">14 Million Business</h4>
+ <p>Choose from a collection of handpicked luxury villas &amp; apartments</p>
+ <h5><a class="button_link mgt" href="#">Explore Now</a></h5>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="proj_h1i text-center clearfix">
+ <span><i class="fa fa-building"></i></span>
+ <h4 class="mt_15 col_black">600 Services Offered</h4>
+ <p>Choose from a collection of handpicked luxury villas &amp; apartments</p>
+ <h5><a class="button_link mgt" href="#">Explore Now</a></h5>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="proj_h1i text-center clearfix">
+ <span><i class="fa fa-map"></i></span>
+ <h4 class="mt_15 col_black">08 Million Visitors</h4>
+ <p>Choose from a collection of handpicked luxury villas &amp; apartments</p>
+ <h5><a class="button_link mgt" href="#">Explore Now</a></h5>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="proj_h1i text-center clearfix">
+ <span><i class="fa fa-user-plus"></i></span>
+ <h4 class="mt_15 col_black">21 Million Business</h4>
+ <p>Choose from a collection of handpicked luxury villas &amp; apartments</p>
+ <h5><a class="button_link mgt" href="#">Explore Now</a></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="course_home">
+<div class="container">
+<div class="row">
+<div class="col-sm-5">
+<div class="course_home_r clearfix">
+ <img src="img/51.jpg" class="iw" alt="abc">
+</div>
+</div>
+<div class="col-sm-7">
+<div class="course_home_l clearfix">
+ <h3 class="mgt">Integer Nec Odio Praesent Libero</h3>
+ <p> Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+ <div class="course_home_li clearfix">
+  <div class="col-sm-6 space_left">
+   <div class="course_home_lii clearfix">
+	   <div class="col-sm-2 space_left col-xs-2"><span class="fa fa-user"></span></div>
+	   <div class="col-sm-10 space_right col-xs-10"><h4 class="mgt col_black"> Better Evaluation of Students</h4></div>
+   </div>
+
+  </div>
+  <div class="col-sm-6 space_left">
+	<div class="course_home_lii clearfix">
+	 <div class="col-sm-2 space_left col-xs-2"><span class="fa fa-book"></span></div>
+	 <div class="col-sm-10 space_right col-xs-10"><h4 class="mgt col_black"> Duis Sagittis Ipsum Praesent Mauris</h4></div>
+	</div>
+
+  </div>
+ </div>
+ <div class="course_home_li clearfix">
+  <div class="col-sm-6 space_left">
+   <div class="course_home_lii clearfix">
+	   <div class="col-sm-2 space_left col-xs-2"><span class="fa fa-play-circle-o"></span></div>
+	   <div class="col-sm-10 space_right col-xs-10"><h4 class="mgt col_black"> Nulla Quis Sem At Nibh Elementum</h4></div>
+   </div>
+
+  </div>
+  <div class="col-sm-6 space_left">
+	<div class="course_home_lii clearfix">
+	 <div class="col-sm-2 space_left col-xs-2"><span class="fa fa-pencil-square-o"></span></div>
+	 <div class="col-sm-10 space_right col-xs-10"><h4 class="mgt col_black"> Sed Cursus Ante Dapibus Diam</h4></div>
+	</div>
+
+  </div>
+ </div>
+ <div class="course_home_li clearfix">
+  <div class="col-sm-6 space_left">
+   <div class="course_home_lii clearfix">
+	   <div class="col-sm-2 space_left col-xs-2"><span class="fa fa-globe"></span></div>
+	   <div class="col-sm-10 space_right col-xs-10"><h4 class="mgt col_black"> Integer Nec Odio Praesent Libero</h4></div>
+   </div>
+
+  </div>
+  <div class="col-sm-6 space_left">
+	<div class="course_home_lii clearfix">
+	 <div class="col-sm-2 space_left col-xs-2"><span class="fa fa-bookmark-o"></span></div>
+	 <div class="col-sm-10 space_right col-xs-10"><h4 class="mgt col_black">  Lorem Ipsum Dolor Sit Amet Consectetur </h4></div>
+	</div>
+
+  </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="prom">
+ <div class="container">
+  <div class="row">
+   <div class="prom_1 clearfix">
+    <div class="col-sm-6">
+      <div class="prom_1l clearfix">
+	    <div class="grid clearfix">
+		  <figure class="effect-jazz">
+			<a href="#"><img src="img/52.jpg" height="560" class="iw" alt="img25"></a>
+		  </figure>
+	  </div>
+	  </div>
+	</div>
+	<div class="col-sm-6">
+      <div class="prom_1r clearfix">
+	   <h4 class="mgt col_black">ANALYSIS</h4>
+	   <h3>Get Free SEO Analysis?</h3>
+	   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum auctor justo, ac bibendum neque sollicitudin ac.</p>
+	   <input class="form-control" placeholder="Your Name" type="text">
+	   <input class="form-control" placeholder="Email" type="text">
+	   <input class="form-control" placeholder="Your Phone" type="text">
+	   <input class="form-control" placeholder="Website" type="text">
+	   <h5><a class="button_link" href="#">SUBMIT </a></h5>
+	  </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+ 
+<section id="footer" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="footer clearfix">
+	  <div class="col-sm-4 footer_left clearfix">
+	 <div class="footer_left_inner clearfix">
+	   <h4>About</h4>
+	   <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero....</p>
+	   <ul>
+	    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+		<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	   </ul>
+	 </div>
+	</div>
+	 <div class="col-sm-2 footer_right_inner_1 clearfix">
+	    <div class="informer clearfix">
+		 <h4>Other Link</h4>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Curabitursodales</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Torquent Nulla</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Sociosqu</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Class aptent</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Integer nec</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Integer nec</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Conubia</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Curabitursodales</a></p>
+		</div>
+	   </div>
+	   <div class="col-sm-2 footer_right_inner_1 clearfix">
+	    <div class="informer clearfix">
+		 <h4>Popular Link</h4>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Elementum</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Mauris massa</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Nulla quis</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Conubia</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Curabitursodales</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Torquent Nulla</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Sociosqu</a></p>
+		 <p class="col-sm-12 col-xs-6 space_left"><a href="#">Class aptent</a></p>
+		</div>
+	   </div>
+	   <div class="col-sm-4 footer_right_inner_n clearfix">
+	    <div class="informer clearfix">
+		 <h4>Contact Us</h4>
+		<div class="footer_right_inner_ni clearfix">
+		  <div class="col-sm-1 col-xs-1">
+		   <span class="col_pur"><i class="fa fa-map-marker"></i></span>
+		  </div>
+		  <div class="col-sm-11 col-xs-11">
+		   <p class="col_white">Z793 STower Suat, Suite 26 Knockland, DB 8513 United Kingdom</p>
+		  </div>
+		</div>
+		<div class="footer_right_inner_ni clearfix">
+		  <div class="col-sm-1 col-xs-1">
+		   <span class="col_pur"><i class="fa fa-headphones"></i></span>
+		  </div>
+		  <div class="col-sm-11 col-xs-11">
+		   <p class="col_white">+(000) 345 67 89</p>
+		  </div>
+		</div>
+		<div class="footer_right_inner_ni clearfix">
+		  <div class="col-sm-1 col-xs-1">
+		   <span class="col_pur"><i class="fa fa-envelope"></i></span>
+		  </div>
+		  <div class="col-sm-11 col-xs-11">
+		   <p class="col_white">info@gmail.com</p>
+		  </div>
+		</div>
+		<div class="footer_right_inner_ni">
+		  <div class="col-sm-1 col-xs-1">
+		   <span class="col_pur fs-5"><i class="fa fa-phone"></i></span>
+		  </div>
+		  <div class="col-sm-11 col-xs-11">
+		   <p class="col_white">+(000) 345 67 89</p>
+		  </div>
+		</div>
+		</div>
+	   </div>
+   </div>
+  </div>
+ </div>
+ </section>
+ 
+<section id="footer_end" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="footer_end clearfix">
+	 <p class="website">© 2013 Your Website Name. All rights reserved | Design by<a href="http://www.templateonweb.com"> TemplateOnWeb</a></p>
+   </div>
+  </div>
+ </div>
+ </section>
+ 
+ 
+<script>
+	$(document).ready(function() {              
+    $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){    
+        var $this = $(this),
+        c = $this.data('count');    
+        if (!c) c = 0;
+        c++;
+        $this.data('count',c);
+        $('#'+this.id+'-bs3').html(c);
+    });      
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });                                        
+}); 
+
+	</script>
+	
+<script>
+$(document).ready(function(){
+	/*****Fixed Menu******/
+	var secondaryNav = $('.cd-secondary-nav'),
+	   secondaryNavTopPosition = secondaryNav.offset().top;
+	   navbar_height = document.querySelector('.navbar').offsetHeight;
+	   
+		$(window).on('scroll', function(){
+		    if($(window).scrollTop() > secondaryNavTopPosition + navbar_height ) {
+				secondaryNav.addClass('is-fixed');	
+				document.body.style.paddingTop = navbar_height + 'px';
+				
+			} else {
+				secondaryNav.removeClass('is-fixed');
+				document.body.style.paddingTop = '0'
+			}
+		});	
+		
+});
+</script>
+
+</body>
+</html>
