@@ -235,7 +235,8 @@
 	<div class="col-sm-6 details_2_right clearfix">
 	 <div class="details_2_right_inner clearfix">
       <h2 id="product-title"></h2>
-      <p id="product-desc"></p>
+      <p id="product-category"></p>
+	  <h1 id="product-desc"></h1>
       <h3 id="product-price"></h3>
 	 </div>
       <!-- WhatsApp Buy Button -->
@@ -255,6 +256,7 @@
 const products = {
   1: {
     title: "Curabitursodales Ligula in Libero",
+	category: "Cultural",
     desc: "Detailed description for artwork 1. Size: 40x50cm, Medium: Oil on Canvas.",
     price: "$38.00",
     img: "img/4.jpg"
@@ -282,6 +284,7 @@ const id = urlParams.get("id");
 if (products[id]) {
   const product = products[id];
   document.getElementById("product-title").innerText = product.title;
+  document.getElementById("product-category").innerText = product.category;
   document.getElementById("product-desc").innerText = product.desc;
   document.getElementById("product-price").innerText = product.price;
   document.getElementById("product-image").src = product.img;
