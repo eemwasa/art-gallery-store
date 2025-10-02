@@ -8,7 +8,82 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<section id="top" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="top clearfix">
+    <div class="col-sm-4 top_left clearfix">
+	 <div class="top_left_inner clearfix">
+	  <p><a href="index.html"><i class="fa fa-pencil"></i>New <span class="new_right">Art</span></a></p>
+	 </div>
+	</div> 
+	<div class="col-sm-4 top_left clearfix">
+	 <div class="top_new clearfix">
+      <div class="input-group">
+			<input type="text" class="form-control" placeholder="Search">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="button">
+					Go!</button>
+			</span>
+      </div>
+	 </div>
+	</div>
+	<div class="col-sm-4 top_right clearfix">
+	 <div class="top_right_inner clearfix">
+	  <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a href="#" class="top_tab dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gear"></i></a>
+                    <ul class="dropdown-menu drop_top">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="top_tab dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                    <ul class="dropdown-menu" style="min-width: 300px;">
+                        <li>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form class="navbar-form navbar-left" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button">
+                                                Go!</button>
+                                        </span>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+				<li class="dropdown">
+						<a class="top_tab dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-plus-square-o"></i></a>
+						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+							<form method="post" action="http://bootsnipp-env.elasticbeanstalk.com/iframe/login" accept-charset="UTF-8">
+								<input style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
+								<input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
+								<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+								<label class="string optional" for="user_remember_me"> Remember me</label>
+								<input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">
+								<label style="text-align:center;margin-top:5px">or</label>
+                                <input class="btn btn-danger btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+								<input class="btn btn-success btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
+							</form>
+						</div>
+					</li>
+            </ul>
+	 </div>
+	</div>   	
+   </div>
+  </div>
+ </div>
+</section>
+  
 <div class="container mt-5">
   <div class="row">
     <!-- Product Image -->
