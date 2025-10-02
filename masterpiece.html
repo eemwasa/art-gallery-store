@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Art Detail</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <!-- Product Image -->
+    <div class="col-md-6">
+      <img id="product-image" src="" class="img-fluid" alt="Artwork">
+    </div>
+
+    <!-- Product Details -->
+    <div class="col-md-6">
+      <h2 id="product-title"></h2>
+      <p id="product-desc"></p>
+      <h3 id="product-price"></h3>
+
+      <!-- WhatsApp Buy Button -->
+      <a id="whatsapp-btn" href="#" class="btn btn-success btn-lg" target="_blank">
+        <i class="fa fa-whatsapp"></i> Buy on WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+// 1. Define your products
+const products = {
+  1: {
+    title: "Curabitursodales Ligula in Libero",
+    desc: "Detailed description for artwork 1. Size: 40x50cm, Medium: Oil on Canvas.",
+    price: "$38.00",
+    img: "img/4.jpg"
+  },
+  2: {
+    title: "Arcu Porta",
+    desc: "Detailed description for artwork 2. A modern abstract with vibrant tones.",
+    price: "$45.00",
+    img: "img/1.jpg"
+  },
+  3: {
+    title: "Dolor Sit Amet",
+    desc: "Detailed description for artwork 3. Hand-painted on linen with fine details.",
+    price: "$50.00",
+    img: "img/2.jpg"
+  }
+  // Add more products here...
+};
+
+// 2. Get product id from URL
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+// 3. Load product data
+if (products[id]) {
+  const product = products[id];
+  document.getElementById("product-title").innerText = product.title;
+  document.getElementById("product-desc").innerText = product.desc;
+  document.getElementById("product-price").innerText = product.price;
+  document.getElementById("product-image").src = product.img;
+
+  // WhatsApp Button
+  const phoneNumber = "255XXXXXXXXX"; // Replace with your WhatsApp Business number
+  const message = `Hello, I want to buy this artwork: ${product.title} (${product.price})`;
+  document.getElementById("whatsapp-btn").href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+} else {
+  document.querySelector(".container").innerHTML = "<h3>Product not found.</h3>";
+}
+</script>
+
+</body>
+</html>
